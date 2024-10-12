@@ -59,7 +59,7 @@ def update_user(user_id):
     user.email = data.get('email', user.email)
 
     if 'password' in data:
-        user.password = generate_password_hash(data['password'], method='sha256')
+        user.password = bcrypt.generate_password_hash(data['password']).decode('utf-8')
 
     db.session.commit()
 

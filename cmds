@@ -1,3 +1,8 @@
 pip install flask flask_sqlalchemy flask_jwt_extended pymysql werkzeug
 pip install flask-cors
 
+
+
+
+frontend
+npm install react-router-dom axios
